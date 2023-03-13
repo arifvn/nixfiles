@@ -1,0 +1,4 @@
+let mapleader=" "
+set easymotion
+nmap s <Plug>(easymotion-f)
+nmap S <Plug>(easymotion-F)
