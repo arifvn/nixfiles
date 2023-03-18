@@ -70,8 +70,8 @@
       username = "arifvn";
       fullName = "Maftukhatul Arifin";
       email = "maftukhatularifin13@gmail.com";
-      nixConfigDirectory = "/Users/${username}/nixfiles";
       repoDirectory = "/Volumes/ssd/repo";
+      nixConfigDirectory = "${repoDirectory}/github.com/${username}/nixfiles";
     };
   in
     {
