@@ -96,3 +96,4 @@ Tutorials:
 - [Setup nix-darwin/home-manager from scratch](https://gist.github.com/jmatsushita/5c50ef14b4b96cb24ae5268dab613050)
 - [Darwin Manual](https://daiderd.com/nix-darwin/manual/index.html#sec-options)
 - [Some Issues and Discussions about this original repo](https://github.com/malob/nixpkgs/discussions/6)
+- [How to uninstall nix on MacOS](https://iohk.zendesk.com/hc/en-us/articles/4415830650265-Uninstall-nix-on-MacOS)
