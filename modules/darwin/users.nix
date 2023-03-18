@@ -18,5 +18,9 @@ in {
       type = with types; nullOr string;
       default = null;
     };
+    repoDirectory = mkOption {
+      type = with types; nullOr string;
+      default = null;
+    };
   };
 }

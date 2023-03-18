@@ -3,6 +3,7 @@ inputs: {
   fullName,
   email,
   nixConfigDirectory, # directory on the system where this flake is located
+  repoDirectory, # directory uses for `ghq` package
   system ? "x86_64-darwin",
   modules ? [], # `nix-darwin` modules to include
   extraModules ? [], # Additional `nix-darwin` modules to include, useful when reusing a configuration with `lib.makeOverridable`.
@@ -19,7 +20,7 @@ inputs.darwin.lib.darwinSystem {
       inputs.home-manager.darwinModules.home-manager
       ({config, ...}: {
         users.primaryUser = {
-          inherit username fullName email nixConfigDirectory;
+          inherit username fullName email nixConfigDirectory repoDirectory;
         };
 
         # Support legacy workflows that use `<nixpkgs>` etc.

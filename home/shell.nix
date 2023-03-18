@@ -4,7 +4,11 @@
   lib,
   ...
 }: let
-  inherit (config.home.user-info) nixConfigDirectory;
+  inherit (config.home.user-info) nixConfigDirectory username repoDirectory;
+  androidHome =
+    if pkgs.stdenv.isDarwin
+    then "/Users/${username}/Library/Android/sdk"
+    else "$HOME/Android/Sdk";
 in {
   home = with pkgs; {
     sessionPath = ["$HOME/.yarn/bin" "$HOME/.npm/bin"];
@@ -12,6 +16,7 @@ in {
       LANG = "en_US.UTF-8";
       EDITOR = "${neovim}/bin/nvim";
       FZF_DEFAULT_OPTS = "--pointer='➜' --layout=reverse --cycle --color=bg+:#1f2329,bg:#1f2329,spinner:#98c379,hl:#659542 --color=fg:#D9E0EE,header:#659542,info:#DDB6F2,pointer:#659542 --color=marker:#659542,fg+:#e06c75,prompt:#DDB6F2,hl+:#659542";
+      GHQ_ROOT = "${repoDirectory}";
     };
     packages = with fishPlugins; [
       done

@@ -71,6 +71,7 @@
       fullName = "Maftukhatul Arifin";
       email = "maftukhatularifin13@gmail.com";
       nixConfigDirectory = "/Users/${username}/nixfiles";
+      repoDirectory = "/Volumes/ssd/repo";
     };
   in
     {
@@ -246,6 +247,7 @@
               defaultPrimaryUser
               // {
                 nixConfigDirectory = "${config.home.homeDirectory}/nixfiles";
+                repoDirectory = "${config.home.homeDirectory}/repo";
               };
           });
       };
