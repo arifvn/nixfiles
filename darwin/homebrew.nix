@@ -60,6 +60,7 @@ in {
     "foxitreader"
     "karabiner-elements"
     "captin"
+    "balenaetcher"
 
     # "iriunwebcam"
     # "istat-menus"
