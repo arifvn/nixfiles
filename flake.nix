@@ -225,7 +225,10 @@
                 nixpkgs = defaultNixpkgs;
                 networking.computerName = "${defaultPrimaryUser.username}’s 💻";
                 networking.hostName = "${defaultPrimaryUser.username}-MacPro";
-                networking.knownNetworkServices = ["Wi-Fi" "USB 10/100/1000 LAN"];
+
+                # To display a list of all the network services
+                # on the server's hardware ports, use networksetup -listallnetworkservices.
+                networking.knownNetworkServices = ["Ethernet" "802.11n NIC"];
                 nix.registry.my.flake = inputs.self;
               };
             inherit homeManagerStateVersion;
