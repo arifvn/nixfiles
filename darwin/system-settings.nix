@@ -84,7 +84,7 @@
     AppleShowAllExtensions = true;
 
     # Whether to allow quitting of the Finder. The default is false.
-    QuitMenuItem = true;
+    QuitMenuItem = false;
 
     # Change the default search scope. Use "SCcf" to default to current folder. The default is unset ("This Mac").
     FXDefaultSearchScope = "SCcf";
