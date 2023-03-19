@@ -59,8 +59,8 @@ in {
     "the-unarchiver"
     "foxitreader"
     "karabiner-elements"
-    "captin"
     "balenaetcher"
+    "vlc"
 
     # "iriunwebcam"
     # "istat-menus"

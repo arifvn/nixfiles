@@ -2,7 +2,8 @@
   pkgs,
   lib,
   ...
-}: lib.mkMerge [
+}:
+lib.mkMerge [
   {
     programs.bat = {
       enable = true;
@@ -74,6 +75,7 @@
       postman
       vscode
       xclip
+      vlc
 
       # fonts
       recursive
