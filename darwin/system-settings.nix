@@ -37,6 +37,7 @@
   system.defaults.dock = {
     autohide = true;
     autohide-delay = 0.0;
+    orientation = "left";
 
     # Whether to automatically rearrange spaces based on most recent use. The default is true.
     mru-spaces = false;
