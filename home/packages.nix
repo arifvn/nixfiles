@@ -49,6 +49,7 @@ lib.mkMerge [
       google-cloud-sdk
       yarn
       python3
+      jdk
 
       # Nix
       cachix
