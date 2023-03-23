@@ -31,10 +31,6 @@
 
     # NixGL
     nixgl.url = "github:guibou/nixGL";
-
-    # rust-overlay
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    rust-overlay.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
   outputs = {
@@ -61,7 +57,6 @@
       overlays =
         attrValues self.overlays
         ++ singleton (inputs.android-nixpkgs.overlays.default)
-        ++ singleton (inputs.rust-overlay.overlays.default)
         ++ singleton (inputs.nixgl.overlays.default);
     };
 

@@ -128,28 +128,6 @@ in
       withNodePackages = p: [p.yarn];
     };
 
-    # `nix develop my#rust`
-    rust = mkShell {
-      buildInputs = [
-        (rust-bin.stable.latest.minimal.override {
-          extensions = ["rustc"];
-        })
-      ];
-    };
-
-    # `nix develop my#rust-wasm`
-    rust-wasm = mkShell {
-      buildInputs = [
-        (rust-bin.stable.latest.minimal.override {
-          extensions = ["rustc"];
-          targets = ["wasm32-wasi"];
-        })
-      ];
-      packages = [
-        rustfmt
-      ];
-    };
-
     # `nix develop my#lua`
     lua = mkShell {
       buildInputs = [
