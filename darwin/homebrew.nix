@@ -61,6 +61,7 @@ in {
     "karabiner-elements"
     "balenaetcher"
     "vlc"
+    "intellij-idea"
 
     # "iriunwebcam"
     # "istat-menus"
