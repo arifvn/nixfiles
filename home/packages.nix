@@ -50,6 +50,7 @@ lib.mkMerge [
       yarn
       python3
       jdk
+      maven
 
       # Nix
       cachix
