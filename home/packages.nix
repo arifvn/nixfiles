@@ -39,6 +39,7 @@ lib.mkMerge [
       gh
       duf
       vim
+      ttyper
 
       # Development
       babelfish
