@@ -40,6 +40,7 @@
         ef = "exec ${fish}/bin/fish";
         y = "${yt-dlp}/bin/yt-dlp";
         y4 = "y --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]' $argv";
+        y3 = "y --extract-audio --audio-format mp3 --audio-quality 0 $argv";
         l = "clear";
         clone = "${ghq}/bin/ghq get";
         cp = "cp -r";
