@@ -14,6 +14,9 @@ lib.mkMerge [
     programs.direnv.enable = true;
     programs.direnv.nix-direnv.enable = true;
 
+    # Install the Java development kit and set the JAVA_HOME variable.
+    programs.java.enable = true;
+
     home.packages = with pkgs; [
       # common
       coreutils
