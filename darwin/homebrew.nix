@@ -41,7 +41,9 @@ in {
   ];
 
   homebrew.masApps = {
-    # Guidance = 412759995;
+    Guidance = 412759995;
+    Vimari = 1480933944;
+    Xcode = 497799835;
   };
 
   homebrew.casks = [
