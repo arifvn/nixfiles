@@ -5,7 +5,7 @@ in {
     enable = true;
     enableFishIntegration = true;
     settings = {
-      add_newline = true;
+      add_newline = false;
       command_timeout = 1000;
       cmd_duration = {
         format = " [$duration]($style) ";
