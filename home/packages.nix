@@ -55,6 +55,7 @@ lib.mkMerge [
       python3
       jdk
       maven
+      spring-boot-cli
 
       # Nix
       cachix
