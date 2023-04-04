@@ -9,9 +9,10 @@
     if pkgs.stdenv.isDarwin
     then "/Users/${username}/Library/Android/sdk"
     else "$HOME/Android/Sdk";
+  androidTools = "${androidHome}/tools/";
+  androidPlatformTools = "${androidHome}/platform-tools/";
 in {
   home = with pkgs; {
-    sessionPath = ["$HOME/.yarn/bin" "$HOME/.npm/bin"];
     sessionVariables = {
       LANG = "en_US.UTF-8";
       EDITOR = "${neovim}/bin/nvim";
@@ -31,6 +32,11 @@ in {
       enable = true;
       interactiveShellInit = ''
         ${pkgs.thefuck}/bin/thefuck --alias | source
+
+        set -gx PATH ${androidTools} $PATH
+        set -gx PATH ${androidPlatformTools} $PATH
+        set -gx PATH $HOME/.yarn/bin $PATH
+        set -gx PATH $HOME/.npm/bin $PATH
 
         # Fish color
         set -U fish_color_command 6CB6EB --bold

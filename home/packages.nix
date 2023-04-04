@@ -57,6 +57,11 @@ lib.mkMerge [
       maven
       spring-boot-cli
 
+      # Android reverse engineering
+      jd-gui
+      jadx
+      # apktool
+
       # Nix
       cachix
       comma

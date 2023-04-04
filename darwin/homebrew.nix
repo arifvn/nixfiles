@@ -59,7 +59,6 @@ in {
     "qbittorrent"
     "sequel-pro"
     "the-unarchiver"
-    "foxitreader"
     "karabiner-elements"
     "balenaetcher"
     "vlc"
